@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa Lapangan Bola</title>
+    <!-- Menggunakan Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* CSS untuk mengatur latar belakang dengan gambar */
+        body {
+            background-image: url('championship.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; /* Agar gambar tidak diulang */
+            background-attachment: fixed; /* Agar gambar tetap pada posisinya saat scrolling */
+        }
+
+        /* CSS untuk mengatur konten pada latar belakang dengan transparansi */
+        .container {
+            background-color: rgba(255, 255, 255, 0.5); /* Warna latar belakang konten dengan transparansi */
+            padding: 20px;
+            border-radius: 10px; /* Tambahkan border-radius untuk membulatkan sudut elemen */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Tambahkan efek bayangan untuk konten */
+        }
+    </style>
+    
+    <style>
+        /* CSS untuk mengatur tata letak form di tengah halaman */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* CSS untuk mengatur latar belakang tombol menjadi biru */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        /* CSS untuk mengatur latar belakang tombol "Kirim" menjadi hijau */
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        /* CSS untuk memberi jarak antara elemen-elemen */
+        .mb-3 {
+            margin-bottom: 15px;
+        }
+
+        /* CSS untuk mengatur padding pada formulir */
+        .form-container {
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1 class="mb-3">Sewa Lapangan Bola</h1>
+            <a href="latihan1_PAGE1.html" class="btn btn-primary mb-3">Daftar Lapangan</a>
+            <a href="latihan1_PAGE2.html" class="btn btn-primary mb-3">Sewa Lapangan</a>
+            <a href="latihan1_PAGE3.html" class="btn btn-primary mb-3">Harga Lapangan</a>
+            <form>
+                <div class="form-group">
+                    <label for="nama-penyewa">Nama Penyewa:</label>
+                    <input type="text" class="form-control" id="nama-penyewa">
+                </div>
+           
+                <div class="form-group">
+                    <label for="harga">Harga Sewa:</label>
+                    <input type="text" class="form-control" id="harga">
+                </div>
+                <div class="form-group">
+                    <label for="jenis">Jenis Lapangan:</label>
+                    <select class="form-control" id="jenis">
+                        <option value="lapangan1">Lapangan 1</option>
+                        <option value="lapangan2">Lapangan 2</option>
+                        <option value="lapangan3">Lapangan 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="lokasi">Lokasi:</label>
+                    <input type="text" class="form-control" id="lokasi">
+                </div>
+                <div class="form-group">
+                    <label for="tanggal-sewa">Tanggal Sewa:</label>
+                    <input type="date" class="form-control" id="tanggal-sewa">
+                </div>
+                <div class="form-group">
+                    <label for="keterangan">Keterangan:</label>
+                    <textarea class="form-control" id="keterangan" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Kirim</button>
+                <button type="reset" class="btn btn-secondary" form="nama-form">Reset</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
